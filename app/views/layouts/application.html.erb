@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>여행을 쉽고 더욱 더 재밌게!</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<ul>
+  <% if user_signed_in? %>
+    <li><%=current_user.email%></li>
+     <li><a href="users/sign_out" data-method="delete">로그아웃</a></li>
+  <% else %>
+    <li><a href="users/sign_in">로그인</a></li>
+    <li><a href="users/sign_up">회원가입</a></li>
+  <% end %>
+
+ 
+</ul>
+
 
 <%= yield %>
 

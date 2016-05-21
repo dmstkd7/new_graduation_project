@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>여행 계획 누구보다 더욱 쉽게!</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="/public/css/skel.css" />
+			<link rel="stylesheet" href="/public/css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+		<!-- Header -->
+			<div id="header">
+				<div class="container">
+						
+					<!-- Logo -->
+						<h1><a href="#" id="logo">여행 계획을 재밌고 편리하게!</a></h1>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="place.html">여행지</a></li>
+								<li><a href="makeplan.html">일정 만들기</a></li>
+								<li><a href="recommend.html">추천 여행지</a></li>
+							</ul>
+						</nav>
+
+
+					<!-- Banner -->
+						<div id="banner">
+							<div class="container">
+								<section>
+									<header class="major">
+										<h2>계획을 좀 더 쉽고 재밌게~!</h2>
+										<span class="byline"> 나만의 여행 플래너!</span>
+									</header>
+									
+									  <% if user_signed_in? %>
+									     <a href="users/sign_out" data-method="delete" class="button alt"><%=current_user.email%><br><br>로그아웃</a>
+									  <% else %>
+									    <a href="users/sign_in" class="button alt">로그인</a>
+									  <% end %>
+									
+									
+									
+								</section>			
+							</div>
+						</div>
+
+				</div>
+			</div>
+
+		<!-- Featured -->
+			<div class="wrapper style2">
+				<section class="container">
+					<header class="major">
+						<h2>인기 여행 일정</h2>
+						<span class="byline">사람들이 자주 가는 곳을 확인해 보세요</span>
+					</header>
+					<div class="row no-collapse-1">
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic02.jpg" alt=""></a>
+							<p>하와이 같은 부산</p>
+						</section>
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic03.jpg" alt=""></a>
+							<p>역시 여행은 전주</p>
+						</section>
+						<section class="4u">
+							<a href="#" class="image feature"><img src="/images/pic04.jpg" alt=""></a>
+							<p> 제주도 어디까지 가봤니? </p>
+						</section>
+	
+					</div>
+				</section>
+			</div>
+
+		<!-- Main -->
+			<div id="main" class="wrapper style1">
+				<section class="container">
+					<header class="major">
+						<h2></h2>
+						<span class="byline">사람들이 자주 가는 곳을 확인해 보세요</span>
+					</header>
+					<div class="row no-collapse-1">
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic02.jpg" alt=""></a>
+							<p>하와이 같은 부산</p>
+						</section>
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic03.jpg" alt=""></a>
+							<p>역시 여행은 전주</p>
+						</section>
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic04.jpg" alt=""></a>
+							<p> 제주도 어디까지 가봤니? </p>
+						</section>
+	
+					</div>
+					
+					<div class="row no-collapse-1">
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic02.jpg" alt=""></a>
+							<p>하와이 같은 부산</p>
+						</section>
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic03.jpg" alt=""></a>
+							<p>역시 여행은 전주</p>
+						</section>
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic04.jpg" alt=""></a>
+							<p> 제주도 어디까지 가봤니? </p>
+						</section>
+	
+					</div>
+				</section>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+
+					<!-- Lists -->
+						<div class="row">
+							<div class="8u">
+								<section>
+									<header class="major">
+										<h2>여행 이야기</h2>
+										<span class="byline"></span>
+									</header>
+									<div class="row">
+										<section class="6u">
+											<ul class="default">
+												<li><a href="/main.html">여행 이야기</a></li>
+												<li><a href="/makeplan.html">여행지</a></li>
+												<li><a href="/place.html"></a>일정 만들기</li>
+												<li><a href="/recommend.html">추천 여행지</a></li>
+											</ul>
+										</section>
+										<section class="6u">
+											<ul class="default">
+												<li><a href="#">제작일자 2016년 5월 21일</a></li>
+												<li><a href="#">제작자 : 임동찬, 장은상</a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+											</ul>
+										</section>
+									</div>
+								</section>
+							</div>
+							<div class="4u">
+								<section>
+									<header class="major">
+										<h2>제작자 연락처</h2>
+										<span class="byline"></span>
+									</header>
+									<ul class="contact">
+										<li>
+											<span class="address">Address</span>
+											<span> 서울특별시 상수동 홍익대학교 <br />T동 컴퓨터공학과</span>
+										</li>
+										<li>
+											<span class="mail">Mail</span>
+											<span><a href="#">eeunsang7@naver.com</a></span>
+										</li>
+										<li>
+											<span class="phone">Phone</span>
+											<span>010-9911-6105</span>
+										</li>
+									</ul>	
+								</section>
+							</div>
+						</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							Design: <a href="http://templated.co">templated.co</a>)
+						</div>
+
+				</div>
+			</div>
+
+	</body>
+</html>
