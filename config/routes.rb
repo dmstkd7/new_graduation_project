@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
   
   devise_for :users
-  root 'home#index'
+  root 'home#index.html'
+  
+  get '/place' => 'place#place.html'
+  get '/makeplan' => 'makeplan#makeplan.html'
+  get '/recommend' => 'recommend#recommend'
+  get '/index' => 'home#index.html'
+  get '/history' => 'history#history.html'
+  
+  post '/write' => 'recommend#write'
+  post '/comment' => 'recommend#comment'
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
