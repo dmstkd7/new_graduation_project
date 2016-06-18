@@ -5,4 +5,7 @@ class MakeplanController < ApplicationController
     
     def makeplan
     end
+    
+    
+    
 end

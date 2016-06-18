@@ -55,37 +55,39 @@
 					
 					
 					<div class="row no-collapse-1">
-						<h1>TimeLine</h1>
-						<%=form_tag '/write', method: 'post',multipart: true do%>
-							<textarea name="naeyong"></textarea>
-							<%= file_field_tag 'image' %><br>
-							<input type = "submit">
-						<% end %>
-					
-					
 						<ul>
 							<% @blogs.each do |b| %>
 							<li>
 								<img src="<%= b.image.url %>" width="300"><br>
 								<%=b.content%><br>
+								
+								<li><<<<<<<<<<<<<<<<<<댓글>>>>>>>>>>>>>>>>>></li>
 							
 								<%=form_tag '/comment' do %>
+									<ol><% b.comments.each do |c| %>
+										<li><%=c.msg%></li>
+									
+									<% end %>
+									</ol>
 									<input type = "hidden" name="blog_id" value = "<%=b.id%>">
 									<input type = "text" name="comment">
+									<input type = "submit">
 									
 								<% end %>
-								<ol><% b.comments.each do |c| %>
-									<li><%=c.msg%></li>
 								
-								<% end %>
-								</ol>
-								<input type = "submit">
+
 							</li>
 							<% end %>
 							
 							
+							<h1>TimeLine</h1>
+							<%=form_tag '/write', method: 'post',multipart: true do%>
+								<textarea name="naeyong"></textarea>
+								<%= file_field_tag 'image' %><br>
+								<input type = "submit">
+							<% end %>
 						</ul>
-						
+
 						
 					</div>
 						
